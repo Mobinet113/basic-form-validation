@@ -1,5 +1,5 @@
 <div class="contact-form">
-  <form method="POST" action="HandleContactForm.php">
+  <form method="POST" action="inc/HandleContactForm.php">
     <div class="form-row">
 
       <div class="form-group col">
@@ -49,3 +49,5 @@
   </form>
 
 </div>
+
+<script src="js/HandleContactForm.js" type="text/javascript"></script>
