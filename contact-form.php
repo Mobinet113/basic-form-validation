@@ -44,18 +44,8 @@
 
     </div>
 
-    <input type="submit" class="button" value="Become a niikiis pilot">
+    <input type="submit" class="button" value="Do the thing">
 
   </form>
-
-  <div class="confirmation">
-
-    <h3>
-      Thank you for your interest!<br />
-
-      <small>We will get back to you shortly</small>
-    </h3>
-
-  </div>
 
 </div>
