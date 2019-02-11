@@ -4,8 +4,8 @@
  */
 
 
-if (isset($_REQUEST)) {
-  new HandleContactForm(file_get_contents("php://input"));
+if (isset($_POST)) {
+  new HandleContactForm($_POST);
 }
 
 class HandleContactForm
@@ -16,17 +16,19 @@ class HandleContactForm
 
   public function __construct($entries)
   {
-    $this->entries = json_decode($entries, true);
+    $this->entries = $entries;
     $this->errors = array();
 
     if ($this->validateEntry()) {
       // If the form is valid, then do something cool
+      echo 'Everything is valid!';
     }
   }
 
 
   private function validateEntry()
   {
+
 
     foreach ($this->entries as $entry) {
 
